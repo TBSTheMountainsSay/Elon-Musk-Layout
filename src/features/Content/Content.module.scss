@@ -1,0 +1,111 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .left_side {
+    margin-top: 23.8rem;
+    display: flex;
+    flex-direction: column;
+    .img {
+      width: 36.2rem;
+      img {
+        width: 100%;
+      }
+    }
+    .text_wrapper {
+      display: none;
+      .title {
+        color: white;
+        font-size: 4.7rem;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+        background: -webkit-linear-gradient(
+          0deg,
+          var(--def),
+          var(--gradient-orange)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .text {
+        color: white;
+        font-size: 2.1rem;
+        font-weight: 500;
+        background: -webkit-linear-gradient(
+          0deg,
+          var(--def),
+          var(--gradient-orange)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .button_wrapper {
+      margin-top: 13.5rem;
+      padding: 1rem 2.2rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border-blue);
+      border-image: linear-gradient(
+        to right top,
+        var(--border-blue),
+        var(--border-dark-blue),
+        var(--border-blue)
+      );
+      border-image-slice: 1;
+      width: 18rem;
+      transition: 0.3s;
+      .button {
+        display: block;
+        color: var(--def-hover);
+        font-size: 1.4rem;
+        transition: 0.3s;
+      }
+    }
+    .button_wrapper:hover {
+      transition: 0.3s;
+      border: 2px solid var(--border-blue);
+      border-image: linear-gradient(
+        to right top,
+        var(--border-dark-blue),
+        var(--border-blue),
+        var(--border-dark-blue)
+      );
+      border-image-slice: 1;
+
+      .button {
+        display: block;
+        color: var(--def-hover);
+        font-size: 1.5rem;
+      }
+    }
+    .pointer {
+      margin-left: 19.5rem;
+    }
+  }
+  .right_side {
+    margin-top: 15.5rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1260px) {
+  .content {
+    .left_side {
+      .img {
+        display: none;
+      }
+      .text_wrapper {
+        display: unset;
+
+        .title {
+        }
+        .text {
+        }
+      }
+    }
+  }
+}

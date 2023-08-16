@@ -1,0 +1,24 @@
+.cell {
+  width: 50%;
+  height: 19rem;
+  //background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .text {
+    font-size: 1.8rem;
+    color: var(--def);
+    font-weight: 300;
+  }
+  .text_upper {
+  }
+  .title {
+    font-size: 6rem;
+    color: var(--def);
+    margin: 3rem 0 0.3rem 0;
+  }
+  .text_bottom {
+  }
+}

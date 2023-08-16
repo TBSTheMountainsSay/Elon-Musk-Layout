@@ -1,0 +1,94 @@
+@import 'color';
+
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: url('../assets/MuseoSansCyrl100.ttf');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: url('../assets/MuseoSansCyrl300.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: url('../assets/MuseoSansCyrl500.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: url('../assets/MuseoSansCyrl700.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: url('../assets/MuseoSansCyrl900.ttf');
+  font-weight: 900;
+}
+
+*,
+*:after,
+*:before {
+  font-size: 10px;
+  font-family: MuseoSansCyrl, sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.svg-preloader {
+  stroke: var(--button);
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto;
+}
+
+.main {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+@media (max-width: 850px) {
+  .main {
+    padding: 0 1rem;
+  }
+}
+
+.corner {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  transform: rotate(90deg);
+}
+.right {
+  left: unset;
+  right: 0;
+  transform: rotate(180deg);
+}
+.bottom {
+  top: unset;
+  bottom: 0;
+  transform: rotate(0deg);
+}
+.right.bottom {
+  transform: rotate(-90deg);
+}
+
+:root {
+  @each $name, $color in $light-theme {
+    --#{$name}: #{$color};
+  }
+  color-scheme: light;
+}
+
+:root[color-scheme='light'] {
+  @each $name, $color in $light-theme {
+    --#{$name}: #{$color};
+  }
+  color-scheme: light;
+}

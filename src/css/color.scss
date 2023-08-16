@@ -1,0 +1,17 @@
+$palette: (
+  white: #fff,
+  grey: #b1b1b1,
+  violet: #393339,
+  orange: #ff4005,
+  blue: #24599c,
+  dark-blue: #0f1f2d,
+);
+
+$light-theme: (
+  def: map-get($palette, white),
+  def-hover: map-get($palette, grey),
+  border-menu: map-get($palette, violet),
+  gradient-orange: map_get($palette, orange),
+  border-blue: map_get($palette, blue),
+  border-dark-blue: map_get($palette, dark-blue),
+);
