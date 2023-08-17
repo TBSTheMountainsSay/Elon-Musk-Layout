@@ -13,8 +13,12 @@ const Content = ({}) => {
         <div className={styles.left_side}>
           <img src={Mars} className={styles.img} />
           <div className={styles.text_wrapper}>
-            <div className={styles.title}>ПУТЕШЕСТВИЕ</div>
-            <div className={styles.text}>на красную планету</div>
+            <div className={clsx(styles.title, styles.gradient)}>
+              ПУТЕШЕСТВИЕ
+            </div>
+            <div className={clsx(styles.text, styles.gradient)}>
+              на красную планету
+            </div>
           </div>
           <div className={styles.button_wrapper}>
             <button className={styles.button}>Начать путешествие</button>

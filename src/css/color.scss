@@ -5,6 +5,7 @@ $palette: (
   orange: #ff4005,
   blue: #24599c,
   dark-blue: #0f1f2d,
+  orange25: rgba(255, 64, 5, 0.25),
 );
 
 $light-theme: (
@@ -14,4 +15,5 @@ $light-theme: (
   gradient-orange: map_get($palette, orange),
   border-blue: map_get($palette, blue),
   border-dark-blue: map_get($palette, dark-blue),
+  menu: map_get($palette, orange25),
 );

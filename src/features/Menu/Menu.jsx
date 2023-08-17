@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Menu.module.scss';
 import logo from 'src/images/logo.png';
 import clsx from 'clsx';
 import corner from 'src/images/corner.png';
 import SvgSelector from '../../components/SvgSelector/SvgSelector';
+import AdaptiveMenu from '../../components/AdaptiveMenu/AdaptiveMenu';
 
 const Menu = ({}) => {
+  const [isActiveMenu, setIsActiveMenu] = useState(false);
+
+  const handleActiveMenu = () => {
+    setIsActiveMenu(!isActiveMenu);
+  };
+
   return (
     <div className={styles.wrapper}>
       <div className={clsx(styles.menu, 'main')}>
@@ -17,7 +24,18 @@ const Menu = ({}) => {
           <img src={corner} className={clsx('corner', 'right', 'bottom')} />
         </div>
         <div className={styles.menu_items}>
-          <SvgSelector id={'burger'} className={styles.burger} />
+          <button onClick={handleActiveMenu}>
+            <SvgSelector id={'burger'} className={styles.burger} />
+          </button>
+          <div
+            className={
+              isActiveMenu === true
+                ? styles.menuAdaptive
+                : styles.menuAdaptiveDisabled
+            }
+          >
+            <AdaptiveMenu onClick={handleActiveMenu} />
+          </div>
           <div className={styles.menu_item}>Главная</div>
           <div className={styles.menu_item}>Технологии</div>
           <div className={styles.menu_item}>График полетов</div>

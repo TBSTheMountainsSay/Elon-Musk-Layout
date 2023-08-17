@@ -14,11 +14,7 @@
     }
     .text_wrapper {
       display: none;
-      .title {
-        color: white;
-        font-size: 4.7rem;
-        letter-spacing: 0.1rem;
-        font-weight: 700;
+      .gradient {
         background: -webkit-linear-gradient(
           0deg,
           var(--def),
@@ -27,17 +23,16 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
+      .title {
+        color: white;
+        font-size: 4.7rem;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+      }
       .text {
         color: white;
         font-size: 2.1rem;
         font-weight: 500;
-        background: -webkit-linear-gradient(
-          0deg,
-          var(--def),
-          var(--gradient-orange)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
       }
     }
     .button_wrapper {
@@ -80,6 +75,9 @@
         color: var(--def-hover);
         font-size: 1.5rem;
       }
+      .button:hover {
+        color: var(--def);
+      }
     }
     .pointer {
       margin-left: 19.5rem;
@@ -94,14 +92,50 @@
 
 @media (max-width: 1260px) {
   .content {
+    flex-direction: column;
     .left_side {
+      align-items: center;
       .img {
         display: none;
       }
       .text_wrapper {
-        display: unset;
-
+        align-items: unset;
+        display: flex;
+        flex-direction: column;
+        .gradient {
+          background: -webkit-linear-gradient(
+            0deg,
+            var(--def),
+            var(--gradient-orange),
+            var(--def)
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
         .title {
+        }
+        .text {
+        }
+      }
+      .button_wrapper {
+        margin-top: 16.5rem;
+        .button {
+          color: var(--def);
+        }
+      }
+      .pointer {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .content {
+    .left_side {
+      .text_wrapper {
+        .title {
+          font-size: 3.5rem;
         }
         .text {
         }

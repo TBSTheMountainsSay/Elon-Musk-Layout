@@ -1,12 +1,15 @@
 .cell {
-  width: 50%;
+  width: 49%;
   height: 19rem;
-  //background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.01);
+  border: 1px solid rgba(255, 255, 255, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
   .text {
     font-size: 1.8rem;
     color: var(--def);
@@ -21,4 +24,28 @@
   }
   .text_bottom {
   }
+}
+
+.cell:hover {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cell::before {
+  background: radial-gradient(
+    400px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.15),
+    transparent 40%
+  );
+  content: '';
+  opacity: 0;
+  transition: opacity 0.5s;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+}
+.cell:hover::before {
+  opacity: 1;
 }
