@@ -51,17 +51,17 @@
       );
       border-image-slice: 1;
       width: 18rem;
-      transition: 0.3s;
+      transition: 0.5s;
       .button {
         display: block;
         color: var(--def-hover);
         font-size: 1.4rem;
-        transition: 0.3s;
+        transition: 0.5s;
       }
     }
     .button_wrapper:hover {
-      transition: 0.3s;
-      border: 2px solid var(--border-blue);
+      transition: 0.5s;
+      border: 1px solid var(--border-blue);
       border-image: linear-gradient(
         to right top,
         var(--border-dark-blue),
@@ -73,7 +73,6 @@
       .button {
         display: block;
         color: var(--def-hover);
-        font-size: 1.5rem;
       }
       .button:hover {
         color: var(--def);
@@ -88,6 +87,10 @@
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+.flicker {
+  box-shadow: 0 0 20px var(--def);
 }
 
 @media (max-width: 1260px) {
@@ -126,6 +129,11 @@
       .pointer {
         display: none;
       }
+    }
+    .right_side {
+      margin-bottom: 5rem;
+      display: flex;
+      justify-content: center;
     }
   }
 }

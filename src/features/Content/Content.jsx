@@ -22,8 +22,14 @@ const Content = ({}) => {
           </div>
           <div className={styles.button_wrapper}>
             <button className={styles.button}>Начать путешествие</button>
-            <img src={corner} className={clsx('corner', 'bottom')} />
-            <img src={corner} className={clsx('corner', 'right')} />
+            <img
+              src={corner}
+              className={clsx('corner', 'bottom', styles.flicker)}
+            />
+            <img
+              src={corner}
+              className={clsx('corner', 'right', styles.flicker)}
+            />
           </div>
           <img src={pointer} className={styles.pointer} />
         </div>
@@ -37,6 +43,7 @@ const Content = ({}) => {
           <Cell
             text_upper={'календарик за'}
             title={'2001'}
+            extraTitle={'г.'}
             text_bottom={'в подарок'}
           />
           <Cell text_upper={'путешествие'} title={'597'} text_bottom={'дней'} />

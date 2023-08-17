@@ -7,6 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     .img {
       max-width: 31rem;
       max-height: 10rem;
@@ -32,6 +33,8 @@
         stroke: var(--def);
         fill: var(--def);
         transition: 0.3s;
+        position: fixed;
+        margin: -1.5rem 0 0 -3rem;
       }
       .burger:hover {
         fill: var(--def-hover);
@@ -64,9 +67,10 @@
 
   .menuAdaptiveDisabled {
     position: fixed;
-    right: -100%;
     width: 0;
     height: 100%;
+    right: -100%;
+    top: 0;
     transition: 0.5s;
     z-index: 5;
   }
