@@ -43,15 +43,28 @@
       .menu_item {
         font-size: 1.6rem;
         color: var(--def);
-        border: 1px solid transparent;
         transition: 0.3s;
         padding: 1.5rem 0 1rem 0;
         font-weight: 500;
         cursor: pointer;
+        position: relative;
+      }
+      .menu_item:before {
+        position: absolute;
+        height: 0.1rem;
+        width: 0;
+        background-color: var(--def);
+        content: '';
+        bottom: 0;
+        transition: 0.3s;
+        border-radius: 5rem;
       }
       .menu_item:hover {
         color: var(--def-hover);
-        border-bottom: 1px solid var(--def-hover);
+      }
+      .menu_item:hover:before {
+        background-color: var(--def-hover);
+        width: 100%;
       }
     }
   }
