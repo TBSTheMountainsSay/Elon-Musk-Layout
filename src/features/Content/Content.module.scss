@@ -71,10 +71,6 @@
       border-image-slice: 1;
 
       .button {
-        display: block;
-        color: var(--def-hover);
-      }
-      .button:hover {
         color: var(--def);
       }
     }
