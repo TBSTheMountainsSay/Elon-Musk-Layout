@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Elon-Musk-Layout/static/css/main.beca6bc8.css",
+    "main.css": "/Elon-Musk-Layout/static/css/main.0f82fe4c.css",
     "main.js": "/Elon-Musk-Layout/static/js/main.f9f5eade.js",
     "static/js/787.2e08990c.chunk.js": "/Elon-Musk-Layout/static/js/787.2e08990c.chunk.js",
     "static/media/background.png": "/Elon-Musk-Layout/static/media/background.d34b045fba9c8c550801.png",
@@ -10,12 +10,12 @@
     "static/media/MuseoSansCyrl700.ttf": "/Elon-Musk-Layout/static/media/MuseoSansCyrl700.4407722f22c0457d4687.ttf",
     "static/media/MuseoSansCyrl900.ttf": "/Elon-Musk-Layout/static/media/MuseoSansCyrl900.752e5136a4c0d42b0722.ttf",
     "index.html": "/Elon-Musk-Layout/index.html",
-    "main.beca6bc8.css.map": "/Elon-Musk-Layout/static/css/main.beca6bc8.css.map",
+    "main.0f82fe4c.css.map": "/Elon-Musk-Layout/static/css/main.0f82fe4c.css.map",
     "main.f9f5eade.js.map": "/Elon-Musk-Layout/static/js/main.f9f5eade.js.map",
     "787.2e08990c.chunk.js.map": "/Elon-Musk-Layout/static/js/787.2e08990c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.beca6bc8.css",
+    "static/css/main.0f82fe4c.css",
     "static/js/main.f9f5eade.js"
   ]
 }
