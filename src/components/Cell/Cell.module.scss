@@ -60,3 +60,9 @@
 .cell:hover::before {
   opacity: 1;
 }
+
+@media (max-width: 520px) {
+  .cell {
+    margin: 0;
+  }
+}
